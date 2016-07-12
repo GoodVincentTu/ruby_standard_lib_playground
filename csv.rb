@@ -20,7 +20,7 @@ class Product
 end
 
 class ProductRepository
-	FILE = "/tmp/products.csv"
+	FILE = "tmp/products.csv"
 
 	class << self
 		def file_location; FILE; end
@@ -50,7 +50,7 @@ end
 class ProductRepositoryTest < MiniTest::Test
   def setup
   	FileUtils.rm ProductRepository::FILE rescue nil
-  	ProductRepository.create Product.new("Microphone", 200, "Audio")
+  	ProductRepository.create Product.new("Microphone", 201, "Audio")
   end
 
   def test_retrieves_a_list_of_products
