@@ -1,0 +1,5 @@
+source "http://rubygems.org"
+
+gem 'minitest', require: 'minitest/autorun'
+gem 'minitest-utils'
+gem 'pry-byebug'
