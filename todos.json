@@ -1,0 +1,7 @@
+{
+	"todos": [
+		{ "title": "Request the todo list", "done": true },
+		{ "title": "Parse the json data", "done": false },
+		{ "title": "Create objects from data", "done": false}
+	]
+}
